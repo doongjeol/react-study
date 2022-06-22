@@ -1,6 +1,7 @@
 import React, {useRef, useState} from 'react'
 import UserList from './UserList'
 import CreateUser from './CreateUser'
+import WebsocketPractice from './WebsocketPractice'
 
 function App(){
   const [inputs, setInputs] = useState({
@@ -51,6 +52,7 @@ function App(){
         onCreate = {onCreate}
       />
       <UserList users = {users}/>
+      <WebsocketPractice />
     </>
   )
 }
